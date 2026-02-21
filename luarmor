@@ -489,6 +489,16 @@ DupeSection:Slider({
 
 DSection:Label("Need Custom Name Gamepass.\nNeed $2,500\nClick Rollback To Start.\nYou Can Spend/Send Money freely.\nRejoin To Reset Everything.", "Left")
 
+DSection:Button({
+    Name = "Rollback Dupe",
+    Callback = function()
+        local _, hrp = getTarget()
+        if hrp then
+            tp(hrp.Position)
+        end
+    end
+})
+
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Camera = workspace.CurrentCamera
