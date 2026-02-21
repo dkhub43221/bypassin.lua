@@ -9,6 +9,13 @@ local Window = Library:Window({
     FadeSpeed = 0.25,
 })
 
+Library:Notification({
+    Name = "Loaded",
+    Description = "Loaded Bypassin in: " .. string.format("%.4f", os.clock() - LoadingTick) .. " seconds",
+    Duration = 5
+})
+
+
 local CustomTheme = {
     Main = Color3.fromRGB(20, 20, 20),
     Accent = Color3.fromRGB(255, 0, 0),
@@ -647,10 +654,4 @@ TrollSection:Toggle({
             end)
         end
     end
-})
-
-Library:Notification({
-    Name = "Loaded",
-    Description = "Loaded Bypassin in: " .. string.format("%.4f", os.clock() - LoadingTick) .. " seconds",
-    Duration = 5
 })
