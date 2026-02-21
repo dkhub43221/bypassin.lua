@@ -5,6 +5,7 @@ local Window = Library:Window({
     Version = "v2.1",
     Logo = "128173600263640",
     FadeSpeed = 0.25,
+    --Size = UDim2.new(0, 659, 0, 511)
 })
 
 local CustomTheme = {
